@@ -5664,6 +5664,278 @@ body.accessibility-widget-visible ._access-menu {
   }
 }
 
+/* AI-generated section */
+/* ===== Wedding Promo Package Section ===== */
+.promo-wedding-pkg {
+  background: var(--bg-dark, #1a1025);
+  padding: 90px 20px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle radial glow behind card */
+.promo-wedding-pkg::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(110, 59, 139, 0.18) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Container */
+.promo-pkg-container {
+  max-width: 560px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Card */
+.promo-pkg-card {
+  background: linear-gradient(145deg, #27153a 0%, #1e0f2e 100%);
+  border: 1px solid rgba(110, 59, 139, 0.45);
+  border-radius: 20px;
+  padding: 52px 44px 44px;
+  box-shadow:
+    0 8px 40px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(110, 59, 139, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.promo-pkg-card:hover {
+  box-shadow:
+    0 14px 56px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(110, 59, 139, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.07);
+  transform: translateY(-3px);
+}
+
+/* Badge */
+.promo-pkg-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.55);
+  color: var(--secondary, #D4AF37);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 7px 18px;
+  border-radius: 50px;
+  margin-bottom: 28px;
+}
+
+.promo-pkg-badge-icon {
+  font-size: 14px;
+}
+
+/* Title */
+.promo-pkg-title {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0 0 32px;
+  letter-spacing: -0.01em;
+}
+
+/* Features list */
+.promo-pkg-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 36px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.promo-pkg-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(110, 59, 139, 0.12);
+  border: 1px solid rgba(110, 59, 139, 0.25);
+  border-radius: 10px;
+  padding: 14px 18px;
+  color: #e8d8f8;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: right;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.promo-pkg-feature-item:hover {
+  background: rgba(110, 59, 139, 0.22);
+  border-color: rgba(110, 59, 139, 0.45);
+}
+
+.promo-pkg-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  background: var(--primary, #6E3B8B);
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* Divider */
+.promo-pkg-card::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 1px;
+  background: linear-gradient(to left, transparent, rgba(110, 59, 139, 0.4), transparent);
+  margin: 0 auto 32px;
+}
+
+/* Pricing */
+.promo-pkg-pricing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.promo-pkg-old-price {
+  color: #9b8aaa;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.promo-pkg-old-price s {
+  text-decoration: line-through;
+  text-decoration-color: #c0a0d0;
+  text-decoration-thickness: 2px;
+}
+
+.promo-pkg-new-price {
+  color: var(--secondary, #D4AF37);
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+/* CTA Button */
+.promo-pkg-cta {
+  display: inline-block;
+  background: var(--primary, #6E3B8B);
+  color: #ffffff;
+  font-family: system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 18px 44px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 20px rgba(110, 59, 139, 0.45);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.promo-pkg-cta:hover,
+.promo-pkg-cta:focus-visible {
+  background: #8a4aad;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(110, 59, 139, 0.6);
+  outline: none;
+}
+
+.promo-pkg-cta:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 12px rgba(110, 59, 139, 0.4);
+}
+
+.promo-pkg-cta:focus-visible {
+  outline: 3px solid var(--secondary, #D4AF37);
+  outline-offset: 3px;
+}
+
+/* Urgency note */
+.promo-pkg-note {
+  color: #b09ac0;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .promo-wedding-pkg {
+    padding: 60px 16px;
+  }
+
+  .promo-pkg-card {
+    padding: 36px 24px 32px;
+  }
+
+  .promo-pkg-title {
+    font-size: 1.55rem;
+    margin-bottom: 24px;
+  }
+
+  .promo-pkg-new-price {
+    font-size: 2.5rem;
+  }
+
+  .promo-pkg-cta {
+    font-size: 16px;
+    padding: 16px 28px;
+  }
+
+  .promo-pkg-feature-item {
+    font-size: 15px;
+    padding: 12px 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  .promo-pkg-title {
+    font-size: 1.3rem;
+  }
+
+  .promo-pkg-new-price {
+    font-size: 2.1rem;
+  }
+
+  .promo-pkg-badge {
+    font-size: 11px;
+    padding: 6px 14px;
+  }
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
