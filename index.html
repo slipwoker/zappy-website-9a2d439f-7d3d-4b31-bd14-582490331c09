@@ -919,6 +919,16 @@
         <label for="contact-email">דואר אלקטרוני</label>
         <input type="email" id="contact-email" name="email" placeholder="your@email.com" autocomplete="email" required="">
       </div>
+      <div class="form-group">
+        <label for="contact-event-type">סוג האירוע</label>
+        <select id="contact-event-type" name="event_type" required="">
+          <option value="" disabled="" selected="">בחרו סוג אירוע</option>
+          <option value="wedding">חתונה</option>
+          <option value="bar-mitzvah">בר מצווה</option>
+          <option value="bat-mitzvah">בת מצווה</option>
+          <option value="other">אחר</option>
+        </select>
+      </div>
       
       <button type="submit" class="btn-primary contact-submit-btn">שלחו פרטים</button>
     </form>

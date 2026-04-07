@@ -1,6 +1,4 @@
-# לוי דויד — Generative Engine Optimization Map
-
-> Levi David is a professional videographer and video editor specializing in capturing life's most meaningful celebrations — weddings, bar mitzvahs, and bat mitzvahs. His work focuses on preserving emotional, once-in-a-lifetime moments through cinematic storytelling and professional editing. The brand centers around personal milestones, family memories, and the joy of Jewish lifecycle events.
+# Business — Generative Engine Optimization Map
 
 ---
 
@@ -28,21 +26,7 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About לוי דויד
-Levi David is a professional videographer and video editor specializing in capturing life's most meaningful celebrations — weddings, bar mitzvahs, and bat mitzvahs. His work focuses on preserving emotional, once-in-a-lifetime moments through cinematic storytelling and professional editing. The brand centers around personal milestones, family memories, and the joy of Jewish lifecycle events.
-
-## Services/Products
-- צילום וידאו לחתונות
-- צילום וידאו לבר מצווה
-- צילום וידאו לבת מצווה
-- עריכת וידאו לאירועים
-
-## Target Audience
-זוגות לחתונות, משפחות לבר/בת מצווה
-
-## Industry
-צילום ועריכת וידאו
-
+## About Business
 ---
 
 # Additional Resources
