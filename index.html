@@ -389,12 +389,12 @@
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') &amp;&amp; bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage &amp;&amp; bgImage !== 'none') {
+      if (bgImage && bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -407,7 +407,7 @@
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb &amp;&amp; rgb.length &gt;= 3) {
+    if (rgb && rgb.length >= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -543,7 +543,7 @@
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth &lt;= 768;
+      const isMobileViewport = window.innerWidth <= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -734,7 +734,7 @@
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length &gt; 0 
+        const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
           : '[business_phone]';
         
@@ -751,7 +751,7 @@
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth &gt;= 769;
+        const isDesktop = window.innerWidth >= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -825,9 +825,9 @@
   <div class="index-hero-divider-wrapper">
     <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <!-- Gold linework faint wave -->
-      <path d="M0,52 Q120,38 240,50 T480,44 Q600,38 720,52 T960,44 Q1080,38 1200,50 T1440,46" fill="#17141A" stroke="rgba(201,162,39,0.32)" stroke-width="1"></path>
+      <path d="M0,52 Q120,38 240,50 T480,44 Q600,38 720,52 T960,44 Q1080,38 1200,50 T1440,46" fill="var(--bg-light)" stroke="rgba(201,162,39,0.32)" stroke-width="1"></path>
       <!-- Dark fill shape merging into next section -->
-      <path d="M0,90 L0,58 Q90,42 180,56 T360,46 Q450,38 540,52 T720,44 Q810,38 900,52 T1080,46 Q1170,40 1260,54 T1440,48 L1440,90 Z" fill="#17141A"></path>
+      <path d="M0,90 L0,58 Q90,42 180,56 T360,46 Q450,38 540,52 T720,44 Q810,38 900,52 T1080,46 Q1170,40 1260,54 T1440,48 L1440,90 Z" fill="var(--bg-light)"></path>
     </svg>
   </div>
 </section>
@@ -1015,7 +1015,7 @@
       <!-- Column 1: Company Info -->
       <div class="footer-col footer-col--brand">
         <div class="footer-logo-wrap">
-          <img src="/assets/logo.webp" alt="לוי דויד" class="logo">
+          <img src="/assets/logo.webp" alt="לוי דויד" class="logo" data-zappy-footer-image="true">
         </div>
         <p class="footer-tagline">צילום ועריכת וידאו לאירועים בלתי נשכחים — חתונות, בר מצוות ובת מצוות.</p>
         <div class="footer-social">
@@ -1046,18 +1046,9 @@
           <span class="footer-heading-line"></span>
           צור קשר
         </h3>
-        <ul class="footer-contact">
-          <li>
-            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-            <span class="contact-text"><a href="mailto:[business_email]">[business_email]</a></span>
-          </li>
-          <li>
-            <span class="contact-icon"><i class="fas fa-phone"></i></span>
-            <span class="contact-text"><a href="tel:[business_phone]">[business_phone]</a></span>
-          </li>
-          <li><a href="/"><span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
-            <span class="contact-text">[business_address]</span></a></li>
-        </ul>
+        <ul class="footer-contact" ><li>
+            <span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1775563421698-2e61898xt" data-icon-type="fontawesome" style="cursor: pointer;"></i><a href="/cdn-cgi/l/email-protection#1e457c6b6d77707b6d6d417b737f777243" style="background-color: rgb(23, 20, 26); display: inline !important;"><font face="Font Awesome 6 Free"><span style="font-size: 12px; background-color: rgba(110, 59, 139, 0.25);"><b>Cut2cut@gmail0542846427</b></span></font></a></span></li><li><a href="/"><span class="contact-icon"><i class="fas fa-map-marker-alt" style="cursor: pointer;"></i></span>
+            <span class="contact-text">[business_address]</span></a></li></ul>
       </div>
 
       <!-- Column 4: CTA / Extra -->
@@ -1067,8 +1058,8 @@
           רוצים לשמור את הרגע?
         </h3>
         <p class="footer-cta-text">כל אירוע הוא סיפור ייחודי. בואו נספר אותו יחד בצורה הכי יפה שיש.</p>
-        <a href="#services" class="footer-cta-btn">לפרטים נוספים</a>
-        <div class="footer-ornament">
+        <p class="zappy-editable"><a href="#services" class="footer-cta-btn" data-element-type="button" data-element-id="btn-1775563421695-h80e8moxf" data-native-element="true" style="outline: none;">לפרטים נוספים</a>
+        </p><div class="footer-ornament">
           <span class="ornament-line"></span>
           <span class="ornament-diamond">✦</span>
           <span class="ornament-line"></span>
